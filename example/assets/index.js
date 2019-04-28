@@ -1,5 +1,5 @@
 module.exports = {
-  Youtube: require('../../src/'),
+  VideoEmbed: require('../../src/'),
   GitBadges: require('@magic-modules/gitbadges'),
   Pre: require('@magic-modules/pre'),
 }
