@@ -8,7 +8,7 @@
   "scripts": {
     "start": "t -p",
     "format": "f -w --exclude docs",
-    "test": "t --exclude docs example config.js",
+    "test": "t --exclude example docs config.js",
     "build": "NODE_ENV=production magic build",
     "prod": "NODE_ENV=production magic build serve",
     "dev": "magic dev",
@@ -26,7 +26,7 @@
     "@magic-modules/pre": "github:magic-modules/pre",
     "@magic-themes/docs": "github:magic-themes/docs",
     "@magic/core": "github:magic/core",
-    "@magic/test": "0.0.11"
+    "@magic/test": "0.0.12"
   },
   "author": "Wizards & Witches",
   "homepage": "https://magic-modules.github.com/video-embed",
