@@ -26,7 +26,7 @@
     "@magic-modules/pre": "github:magic-modules/pre",
     "@magic-themes/docs": "github:magic-themes/docs",
     "@magic/core": "github:magic/core",
-    "@magic/test": "0.0.10"
+    "@magic/test": "0.0.11"
   },
   "author": "Wizards & Witches",
   "homepage": "https://magic-modules.github.com/video-embed",
