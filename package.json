@@ -1,5 +1,5 @@
 {
-  "name": "@magic-modules/youtube",
+  "name": "@magic-modules/video-embed",
   "version": "0.0.1",
   "main": "src/index.js",
   "files": [
@@ -16,12 +16,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/magic-modules/youtube.git"
+    "url": "git+https://github.com/magic-modules/video-embed.git"
   },
   "bugs": {
-    "url": "https://github.com/magic-modules/youtube/issues"
+    "url": "https://github.com/magic-modules/video-embed/issues"
   },
-  "homepage": "https://github.com/magic-modules/youtube#readme",
   "devDependencies": {
     "@magic-modules/gitbadges": "github:magic-modules/gitbadges",
     "@magic-modules/pre": "github:magic-modules/pre",
@@ -30,9 +29,11 @@
     "@magic/test": "0.0.10"
   },
   "author": "Wizards & Witches",
-  "description": "@magic youtube module. Embed youtube videos.",
+  "homepage": "https://magic-modules.github.com/video-embed",
+  "description": "@magic VideoEmbed module. Embed youtube, vimeo or abritray videos via iframe.",
   "keywords": [
     "youtube",
+    "vimeo",
     "magic",
     "video",
     "component",
