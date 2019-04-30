@@ -1,6 +1,6 @@
 module.exports = {
   state: {
-    logotext: 'Youtube',
+    logotext: 'VideoEmbed',
     menu: [
       { to: '/#installation', text: 'installation' },
       { to: '/#require', text: 'require' },
