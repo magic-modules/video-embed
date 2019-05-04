@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "author": "Wizards & Witches",
   "homepage": "https://magic-modules.github.com/video-embed",
-  "description": "@magic VideoEmbed module. Embed youtube, vimeo or abritray videos via iframe.",
+  "description": "@magic VideoEmbed module. Embed youtube, vimeo or abitrary videos via iframe.",
   "license": "AGPL-3.0",
   "main": "src/index.js",
   "files": [
