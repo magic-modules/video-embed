@@ -21,13 +21,13 @@ module.exports = {
       p('note the missing @ before magic-modules.'),
       p('this is how we install npm modules from github.'),
 
-      Pre.View(`
+      Pre(`
 npm install magic-modules/video-embed
 `),
 
       h2({ id: 'require' }, 'require:'),
       p('first add the component to the assets'),
-      Pre.View(`
+      Pre(`
 // assets/index.js
 module.exports = {
   //...other exports
@@ -37,13 +37,13 @@ module.exports = {
 
       h3('youtube'),
       p('in a page/component, just pass a video id to the VideoEmbed module.'),
-      Pre.View("VideoEmbed('ecIWPzGEbFc')"),
+      Pre("VideoEmbed('ecIWPzGEbFc')"),
       p('renders'),
       VideoEmbed('ecIWPzGEbFc'),
 
       h3('vimeo'),
       p('if the video id is a number, the video is assumed to be hosted on vimeo'),
-      Pre.View(`
+      Pre(`
 VideoEmbed(153090637)
 VideoEmbed('153090637')`),
 
@@ -54,7 +54,7 @@ VideoEmbed('153090637')`),
       p(
         'videos from arbitrary hosts can be included as well, as long as those hosts allow iframe embeds',
       ),
-      Pre.View("VideoEmbed('https://videopress.com/embed/kUJmAcSf')"),
+      Pre("VideoEmbed('https://videopress.com/embed/kUJmAcSf')"),
 
       p('renders'),
       VideoEmbed('https://videopress.com/embed/kUJmAcSf'),
@@ -62,7 +62,7 @@ VideoEmbed('153090637')`),
       h2({ id: 'props' }, 'props'),
       p('you can pass a width and height, a style string and any other props to the video.'),
       ,
-      Pre.View("VideoEmbed({ src: '8QYWGCEm2Dc', width: '50%', style: 'margin: 1em 0 0;' })"),
+      Pre("VideoEmbed({ src: '8QYWGCEm2Dc', width: '50%', style: 'margin: 1em 0 0;' })"),
 
       p('renders'),
       VideoEmbed({ src: '8QYWGCEm2Dc', width: '50%' }),
@@ -71,7 +71,7 @@ VideoEmbed('153090637')`),
       p(
         'to set a fixed video size, simply add both a height and a width value (px, em, rm, vh, pt).',
       ),
-      Pre.View("VideoEmbed({ src: 'SMhwddNQSWQ', width: '300px', height: '900px' })"),
+      Pre("VideoEmbed({ src: 'SMhwddNQSWQ', width: '300px', height: '900px' })"),
       VideoEmbed({ src: 'SMhwddNQSWQ', width: '300px', height: '900px' }),
 
       h2({ id: 'source' }, 'source'),
