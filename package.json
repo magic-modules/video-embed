@@ -1,6 +1,10 @@
 {
   "name": "@magic-modules/video-embed",
   "version": "0.0.1",
+  "author": "Wizards & Witches",
+  "homepage": "https://magic-modules.github.com/video-embed",
+  "description": "@magic VideoEmbed module. Embed youtube, vimeo or abritray videos via iframe.",
+  "license": "AGPL-3.0",
   "main": "src/index.js",
   "files": [
     "src"
@@ -22,15 +26,12 @@
     "url": "https://github.com/magic-modules/video-embed/issues"
   },
   "devDependencies": {
-    "@magic-modules/gitbadges": "github:magic-modules/gitbadges",
+    "@magic-modules/git-badges": "github:magic-modules/git-badges",
     "@magic-modules/pre": "github:magic-modules/pre",
     "@magic-themes/docs": "github:magic-themes/docs",
     "@magic/core": "github:magic/core",
     "@magic/test": "0.0.12"
   },
-  "author": "Wizards & Witches",
-  "homepage": "https://magic-modules.github.com/video-embed",
-  "description": "@magic VideoEmbed module. Embed youtube, vimeo or abritray videos via iframe.",
   "keywords": [
     "youtube",
     "vimeo",
@@ -39,39 +40,10 @@
     "component",
     "embed"
   ],
-  "license": "AGPL-3.0",
   "contributors": [
     {
       "name": "jascha ehrenreich",
       "github": "jaeh"
-    },
-    {
-      "name": "philipp tiefenbacher",
-      "github": "wizard23"
-    },
-    {
-      "name": "tom peak",
-      "github": "tompeak"
-    },
-    {
-      "name": "phileas lebada",
-      "github": "norpol"
-    },
-    {
-      "name": "litto",
-      "github": "mslitto"
-    },
-    {
-      "name": "daniel safar",
-      "github": "n1c3"
-    },
-    {
-      "name": "jay vaughan",
-      "github": "seclorum"
-    },
-    {
-      "name": "alexander weiss",
-      "github": "ylem235"
     }
   ]
 }
