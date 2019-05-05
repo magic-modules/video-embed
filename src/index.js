@@ -5,6 +5,7 @@ const VideoEmbed = p => {
     }
   }
 
+  CHECK_PROPS(p, VideoEmbed.props, 'VideoEmbed')
   let { src, width, height, class: cl = 'VideoEmbed', style = '', host, ...props } = p
   // if there is no video url, why would we render?
   if (!src) {
@@ -23,10 +24,10 @@ const VideoEmbed = p => {
   }
 
   if (width) {
-    style += `width: ${width};`
+    style += `width:${width};`
   }
   if (height) {
-    style += `height: ${height};`
+    style += `height:${height};`
   }
 
   return div(
@@ -59,5 +60,13 @@ VideoEmbed.style = {
     width: '100%',
   },
 }
+
+VideoEmbed.props = [
+  { key: 'src', type: ['string', 'number'], required: true },
+  { key: 'width', type: ['string', 'number'] },
+  { key: 'height', type: ['string', 'number'] },
+  { key: 'style', type: 'string' },
+  { key: 'host', type: 'string' },
+]
 
 module.exports = VideoEmbed
