@@ -30,18 +30,6 @@ npm install --save-exact @magic-modules/video-embed
 ```
 
 #### usage:
-
-##### import:
-```javascript
-// assets/index.js:
-
-module.exports = {
-  //... other entries
-  Youtube: require('@magic-modules/video-embed'),
-}
-```
-
-##### use tag
 ```javascript
 // in any component view
 const component = {

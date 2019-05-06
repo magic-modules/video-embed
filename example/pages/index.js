@@ -21,27 +21,17 @@ module.exports = {
       p('note the missing @ before magic-modules.'),
       p('this is how we install npm modules from github.'),
 
-      Pre(`
-npm install magic-modules/video-embed
-`),
+      Pre('npm install magic-modules/video-embed'),
 
-      h2({ id: 'require' }, 'require:'),
-      p('first add the component to the assets'),
-      Pre(`
-// assets/index.js
-module.exports = {
-  //...other exports
-  VideoEmbed: require('@magic-modules/video-embed'),
-}`),
       h2({ id: 'usage' }, 'usage'),
 
-      h3('youtube'),
+      h3({ id: 'usage-youtube' }, 'youtube'),
       p('in a page/component, just pass a video id to the VideoEmbed module.'),
       Pre("VideoEmbed('ecIWPzGEbFc')"),
       p('renders'),
       VideoEmbed('ecIWPzGEbFc'),
 
-      h3('vimeo'),
+      h3({ id: 'usage-vimeo' }, 'vimeo'),
       p('if the video id is a number, the video is assumed to be hosted on vimeo'),
       Pre(`
 VideoEmbed(153090637)
@@ -50,7 +40,7 @@ VideoEmbed('153090637')`),
       p('renders'),
       VideoEmbed(153090637),
 
-      h4({ id: 'other-video-hosts' }, 'other video hosts'),
+      h4({ id: 'usage-others' }, 'other video hosts'),
       p(
         'videos from arbitrary hosts can be included as well, as long as those hosts allow iframe embeds',
       ),
