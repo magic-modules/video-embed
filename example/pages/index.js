@@ -8,10 +8,7 @@ module.exports = {
         ' VideoEmbed component. It renders videos from any http url that allows iframe embedding.',
       ]),
 
-      GitBadges({
-        project: 'magic-modules/video-embed',
-        appveyor: 'jaeh/video-embed',
-      }),
+      GitBadges('magic-modules/video-embed'),
 
       h2({ id: 'installation' }, 'installation:'),
       p([
