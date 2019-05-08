@@ -39,8 +39,9 @@ const VideoEmbed = p => {
       frameborder: 0,
       allow: 'encrypted-media',
       allowfullscreen: '',
+      ...props,
+      // src has been modified above.
       src,
-      props,
     }),
   )
 }
