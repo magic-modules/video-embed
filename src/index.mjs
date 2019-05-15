@@ -1,11 +1,11 @@
-const VideoEmbed = p => {
+export const View = p => {
   if (typeof p !== 'object') {
     p = {
       src: p,
     }
   }
 
-  CHECK_PROPS(p, VideoEmbed.props, 'VideoEmbed')
+  CHECK_PROPS(p, propTypes, 'VideoEmbed')
   let { src, width, height, class: cl = 'VideoEmbed', style = '', host, ...props } = p
   // if there is no video url, why would we render?
   if (!src) {
@@ -46,7 +46,7 @@ const VideoEmbed = p => {
   )
 }
 
-VideoEmbed.style = {
+export const style = {
   height: 0,
   overflow: 'hidden',
   paddingBottom: '56.25%',
@@ -62,12 +62,10 @@ VideoEmbed.style = {
   },
 }
 
-VideoEmbed.props = [
+export const propTypes = [
   { key: 'src', type: ['string', 'number'], required: true },
   { key: 'width', type: ['string', 'number'] },
   { key: 'height', type: ['string', 'number'] },
   { key: 'style', type: 'string' },
   { key: 'host', type: 'string' },
 ]
-
-module.exports = VideoEmbed
