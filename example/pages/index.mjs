@@ -1,4 +1,4 @@
-module.exports = () => [
+export const View = () => [
   h1('@magic-modules/video-embed'),
   p([
     'this is the ',
