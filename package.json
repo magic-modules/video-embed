@@ -5,12 +5,9 @@
   "homepage": "https://magic-modules.github.com/video-embed",
   "description": "@magic VideoEmbed module. Embed youtube, vimeo or abitrary videos via iframe.",
   "license": "AGPL-3.0",
-  "main": "src/index.mjs",
-  "module": "src/index.mjs",
-  "type": "module",
-  "files": [
-    "src"
-  ],
+  "engines": {
+    "node": ">=12.2.0"
+  },
   "scripts": {
     "start": "t -p",
     "format": "f -w --exclude docs",
@@ -27,6 +24,12 @@
   "bugs": {
     "url": "https://github.com/magic-modules/video-embed/issues"
   },
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "type": "module",
+  "files": [
+    "src"
+  ],
   "devDependencies": {
     "@magic-modules/git-badges": "github:magic-modules/git-badges",
     "@magic-modules/pre": "github:magic-modules/pre",
