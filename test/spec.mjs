@@ -8,13 +8,8 @@ export default [
     info: 'expect VideoEmbed.View to be a function',
   },
   {
-    fn: () => VideoEmbed.View,
-    expect: is.function,
+    fn: () => VideoEmbed.propTypes.VideoEmbed,
+    expect: is.array,
     info: 'expect VideoEmbed.propTypes to be an array',
-  },
-  {
-    fn: () => VideoEmbed.View,
-    expect: is.function,
-    info: 'expect VideoEmbed.View to be an object',
   },
 ]

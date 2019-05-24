@@ -62,10 +62,12 @@ export const style = {
   },
 }
 
-export const propTypes = [
-  { key: 'src', type: ['string', 'number'], required: true },
-  { key: 'width', type: ['string', 'number'] },
-  { key: 'height', type: ['string', 'number'] },
-  { key: 'style', type: 'string' },
-  { key: 'host', type: 'string' },
-]
+export const propTypes = {
+  VideoEmbed: [
+    { key: 'src', type: ['string', 'number'], required: true },
+    { key: 'width', type: ['string', 'number'] },
+    { key: 'height', type: ['string', 'number'] },
+    { key: 'style', type: 'string' },
+    { key: 'host', type: 'string' },
+  ],
+}
