@@ -6,7 +6,7 @@ export const View = p => {
   }
 
   CHECK_PROPS(p, propTypes, 'VideoEmbed')
-  let { src, width, height, class: cl = 'VideoEmbed', style = '', host, ...props } = p
+  let { src, width, height, class: cl = 'VideoEmbed', style, host, ...props } = p
   // if there is no video url, why would we render?
   if (!src) {
     return
@@ -16,25 +16,33 @@ export const View = p => {
     cl = `VideoEmbed ${cl}`
   }
 
-  // src is numeric, assume vimeo
+  // // src is numeric, assume vimeo
   if (src === +src) {
     src = `https://player.vimeo.com/video/${src}`
   } else if (!src.startsWith('http')) {
     src = `https://www.youtube-nocookie.com/embed/${src}`
   }
 
-  if (width) {
-    style += `width:${width};`
-  }
   if (height) {
-    style += `height:${height};`
+    style = style || {}
+    style.height = height
+  }
+
+  if (width) {
+    style = style || {}
+    style.width = width
+  }
+
+  const wrapperProps = {
+    class: cl,
+  }
+
+  if (style) {
+    wrapperProps.style = style
   }
 
   return div(
-    {
-      class: cl,
-      style,
-    },
+    wrapperProps,
     iframe({
       frameborder: 0,
       allow: 'encrypted-media',
