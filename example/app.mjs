@@ -1,5 +1,9 @@
 export const state = {
+  title: '@magic-modules/video-embed',
+  description: 'renders videos from any http url that allows iframe embedding',
+
   logotext: 'VideoEmbed',
+
   menu: [
     { to: '/#installation', text: 'installation' },
     {
