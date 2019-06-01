@@ -30,7 +30,8 @@ export const View = state => [
   p('if the video id is a number, the video is assumed to be hosted on vimeo'),
   Pre(`
 VideoEmbed(153090637)
-VideoEmbed('153090637')`),
+VideoEmbed('153090637')
+`),
 
   p('renders'),
   VideoEmbed(153090637),
