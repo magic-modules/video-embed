@@ -54,7 +54,7 @@ VideoEmbed('153090637')
   VideoEmbed({ src: '8QYWGCEm2Dc', width: '50%' }),
 
   h3({ id: 'fixed-dimensions' }, 'fixed video dimensions'),
-  p('to set a fixed video size, simply add both a height and a width value (px, em, rm, vh, pt).'),
+  p('to set a fixed video size, simply add both a height and a width value (px, em, rem, vh, pt).'),
   Pre("VideoEmbed({ src: 'SMhwddNQSWQ', width: '300px', height: '900px' })"),
   VideoEmbed({ src: 'SMhwddNQSWQ', width: '300px', height: '900px' }),
 
