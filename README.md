@@ -13,8 +13,8 @@ youtube embedding for [@magic](https://magic.github.io/core)
 
 [npm-image]: https://img.shields.io/npm/v/@magic-modules/video-embed.svg
 [npm-url]: https://www.npmjs.com/package/@magic-modules/video-embed
-[travis-image]: https://api.travis-ci.org/magic-modules/video-embed.svg?branch=master
-[travis-url]: https://travis-ci.org/magic-modules/video-embed
+[travis-image]: https://img.shields.io/travis/com/magic-modules/video-embed/master
+[travis-url]: https://travis-ci.com/magic-modules/video-embed
 [appveyor-image]: https://img.shields.io/appveyor/ci/magicmodules/video-embed/master.svg
 [appveyor-url]: https://ci.appveyor.com/project/magicmodules/video-embed/branch/master
 [coveralls-image]: https://coveralls.io/repos/github/magic-modules/video-embed/badge.svg
