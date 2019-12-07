@@ -56,6 +56,8 @@ to set a fixed video size, simply add both a height and a width value (px, em, r
 #### 0.0.1
 first release
 
+#### 0.0.2
+update docs
 
 [npm-image]: https://img.shields.io/npm/v/@magic-modules/video-embed.svg
 [npm-url]: https://www.npmjs.com/package/@magic-modules/video-embed
