@@ -39,9 +39,9 @@ VideoEmbed('153090637')
   VideoEmbed('https://videopress.com/embed/kUJmAcSf'),
 
   h2({ id: 'props' }, 'props'),
-  p('you can pass a width and height, a style string and any other props to the video.'),
-  ,
-  Pre("VideoEmbed({ src: '8QYWGCEm2Dc', width: '50%', style: 'margin: 1em 0 0;' })"),
+  p('you can pass a width and height, a style object and any other props to the video.'),
+
+  Pre("VideoEmbed({ src: '8QYWGCEm2Dc', width: '50%', height: 200, style: { margin: '1em 0 0' } })"),
 
   p('renders'),
   VideoEmbed({ src: '8QYWGCEm2Dc', width: '50%' }),
