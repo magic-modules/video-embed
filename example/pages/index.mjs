@@ -9,14 +9,7 @@ export const View = state => [
   GitBadges('magic-modules/video-embed'),
 
   h2({ id: 'installation' }, 'installation:'),
-  p([
-    'installation is done using npm. ',
-    ' for now, all magic modules live on github and not on npm.',
-  ]),
-  p('note the missing @ before magic-modules.'),
-  p('this is how we install npm modules from github.'),
-
-  Pre('npm install magic-modules/video-embed'),
+  Pre('npm install @magic-modules/video-embed'),
 
   h2({ id: 'usage' }, 'usage'),
 
