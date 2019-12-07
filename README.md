@@ -31,12 +31,11 @@ npm install --save-exact @magic-modules/video-embed
 
 #### usage:
 ```javascript
-// in any component view
-const component = {
-  View: () => [
-    Youtube('8QYWGCEm2Dc'),
-    // or
-    Youtube({ ytid: '8QYWGCEm2Dc', width: 200 }),
-  ],
-}
+VideoEmbed({
+  src: "youtube id or vimeo id or url to video" },
+  width: '300px', // any css size unit accepted. numbers get appended with px
+  height: 300, // any css size unit accepted. numbers get appended with px
+  style: { margin: '1em' },
+  host: 'https://youtube.com/watch?v=',
+}),
 ```

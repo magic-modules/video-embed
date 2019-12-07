@@ -16,7 +16,7 @@ export const View = p => {
     cl = `VideoEmbed ${cl}`
   }
 
-  // // src is numeric, assume vimeo
+  // // src is numeric, assume vimeo. might clash with youtube at one point.
   if (src === +src) {
     src = `https://player.vimeo.com/video/${src}`
   } else if (!src.startsWith('http')) {
@@ -75,7 +75,7 @@ export const propTypes = {
     { key: 'src', type: ['string', 'number'], required: true },
     { key: 'width', type: ['string', 'number'] },
     { key: 'height', type: ['string', 'number'] },
-    { key: 'style', type: 'string' },
+    { key: 'style', type: 'object' },
     { key: 'host', type: 'string' },
   ],
 }
