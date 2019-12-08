@@ -40,12 +40,14 @@
     "@magic/test": "0.1.23"
   },
   "keywords": [
+    "magic",
+    "magic-modules",
     "youtube",
     "vimeo",
-    "magic",
+    "videopress",
     "video",
-    "component",
-    "embed"
+    "embed",
+    "hyperapp"
   ],
   "contributors": [
     {
