@@ -12,6 +12,19 @@ it renders videos from any http url that allows iframe embedding.
 [![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 
+[npm-image]: https://img.shields.io/npm/v/@magic-modules/video-embed.svg
+[npm-url]: https://www.npmjs.com/package/@magic-modules/video-embed
+[travis-image]: https://img.shields.io/travis/com/magic-modules/video-embed/master
+[travis-url]: https://travis-ci.com/magic-modules/video-embed
+[appveyor-image]: https://img.shields.io/appveyor/ci/magicmodules/video-embed/master.svg
+[appveyor-url]: https://ci.appveyor.com/project/magicmodules/video-embed/branch/master
+[coveralls-image]: https://coveralls.io/repos/github/magic-modules/video-embed/badge.svg
+[coveralls-url]: https://coveralls.io/github/magic-modules/video-embed
+[greenkeeper-image]: https://badges.greenkeeper.io/magic-modules/video-embed.svg
+[greenkeeper-url]: https://badges.greenkeeper.io/magic-modules/video-embed.svg
+[snyk-image]: https://snyk.io/test/github/magic-modules/video-embed/badge.svg
+[snyk-url]: https://snyk.io/test/github/magic-modules/video-embed
+
 ### installation
 ```bash
 npm install @magic-modules/video-embed
@@ -53,21 +66,14 @@ to set a fixed video size, simply add both a height and a width value (px, em, r
 
 ### changelog
 
-#### 0.0.1
+##### 0.0.1
 first release
 
-#### 0.0.2
+##### 0.0.2
 update docs
 
-[npm-image]: https://img.shields.io/npm/v/@magic-modules/video-embed.svg
-[npm-url]: https://www.npmjs.com/package/@magic-modules/video-embed
-[travis-image]: https://img.shields.io/travis/com/magic-modules/video-embed/master
-[travis-url]: https://travis-ci.com/magic-modules/video-embed
-[appveyor-image]: https://img.shields.io/appveyor/ci/magicmodules/video-embed/master.svg
-[appveyor-url]: https://ci.appveyor.com/project/magicmodules/video-embed/branch/master
-[coveralls-image]: https://coveralls.io/repos/github/magic-modules/video-embed/badge.svg
-[coveralls-url]: https://coveralls.io/github/magic-modules/video-embed
-[greenkeeper-image]: https://badges.greenkeeper.io/magic-modules/video-embed.svg
-[greenkeeper-url]: https://badges.greenkeeper.io/magic-modules/video-embed.svg
-[snyk-image]: https://snyk.io/test/github/magic-modules/video-embed/badge.svg
-[snyk-url]: https://snyk.io/test/github/magic-modules/video-embed
+##### 0.0.3 - unreleased
+require node 13.5.0
+
+##### 0.0.4 - unreleased
+...
