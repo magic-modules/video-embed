@@ -1,11 +1,16 @@
-export const View = p => {
+export const View = (p, children) => {
   if (typeof p !== 'object') {
     p = {
       src: p,
     }
   }
 
+  if (!p.src && typeof children === 'string') {
+    p.src = children
+  }
+
   CHECK_PROPS(p, propTypes, 'VideoEmbed')
+
   let { src, width, height, class: cl = 'VideoEmbed', style, host, ...props } = p
   // if there is no video url, why would we render?
   if (!src) {
@@ -17,7 +22,7 @@ export const View = p => {
   }
 
   // // src is numeric, assume vimeo. might clash with youtube at one point.
-  if (src === +src) {
+  if (parseInt(src) === parseInt(src)) {
     src = `https://player.vimeo.com/video/${src}`
   } else if (!src.startsWith('http')) {
     src = `https://www.youtube-nocookie.com/embed/${src}`
