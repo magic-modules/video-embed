@@ -8,7 +8,7 @@ VideoEmbed component. It renders videos from any http url that allows iframe emb
 
 ## installation
 
-<Pre>npm install @magic-modules/video-embed</Pre>
+`npm install @magic-modules/video-embed`
 
 ## usage
 
@@ -16,9 +16,7 @@ VideoEmbed component. It renders videos from any http url that allows iframe emb
 
 in a page/component, just pass a video src to the VideoEmbed module.
 
-<Pre>
-&lt;VideoEmbed src="ecIWPzGEbFc">&lt;/VideoEmbed>
-</Pre>
+`<VideoEmbed src="ecIWPzGEbFc"></VideoEmbed>`
 
 renders
 
@@ -28,21 +26,17 @@ renders
 
 if the video src is a number, the video is assumed to be hosted on vimeo
 
-<Pre>
-&lt;VideoEmbed>116582567&lt;/VideoEmbed>
-</Pre>
+`<VideoEmbed>116582567</VideoEmbed>`
 
 renders
 
-<VideoEmbed>116582567</VideoEmbed>
+<VideoEmbed src="116582567"></VideoEmbed>
 
 #### #usage-others other video hosts
 
 videos from arbitrary hosts can be included as well, as long as those hosts allow iframe embeds
 
-<Pre>
-&lt;VideoEmbed src="https://videopress.com/embed/kUJmAcSf">&lt;/VideoEmbed>
-</Pre>
+`<VideoEmbed src="https://videopress.com/embed/kUJmAcSf"></VideoEmbed>`
 
 renders
 
@@ -52,31 +46,18 @@ renders
 
 you can pass a width and height, and any other props to the video.
 
-<Pre>
-&lt;VideoEmbed
-  src="8QYWGCEm2Dc"
-  width="50%"
-  height="200"
->&lt;VideoEmbed>
-</Pre>
+`<VideoEmbed src="tIxHmsWCd7g" width="50%" height="200"></VideoEmbed>`
 
 renders
-
-<VideoEmbed
-  src="8QYWGCEm2Dc"
-  width="50%"
-  height="200"
-></VideoEmbed>
+<VideoEmbed src="tIxHmsWCd7g" width="50%" height="200px"></VideoEmbed>
 
 ### fixed-dimensions
 
 to set a fixed video size, simply add both a height and a width value (px, em, rem, vh, pt).
 
-<Pre>
-&lt;VideoEmbed src="E-dUveGINTg" width="300px" height="900px">&lt;VideoEmbed>
-</Pre>
+`<VideoEmbed src="E-dUveGINTg" width="300px" height="900px"></VideoEmbed>`
 
-<VideoEmbed src="E-dUveGINTg" width="300px" height="900px"><VideoEmbed>
+<VideoEmbed src="E-dUveGINTg" width="300px" height="900px"></VideoEmbed>
 
 ## source
 
