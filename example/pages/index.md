@@ -4,7 +4,7 @@ this is the
 [@magic-modules](https://github.com/magic-modules)
 VideoEmbed component. It renders videos from any http url that allows iframe embedding.
 
-<GitBadges>magic-modules/video-embed</GitBadges>
+<GitBadges>@magic-modules/video-embed</GitBadges>
 
 ## installation
 
