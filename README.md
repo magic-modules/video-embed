@@ -79,5 +79,8 @@ update docs
 ##### 0.0.4
 bump required node version to 14.2.0
 
-##### 0.0.5 - unreleased
+##### 0.0.5 
+bump required node version to 14.15.4
+
+##### 0.0.6 - unreleased
 ...
