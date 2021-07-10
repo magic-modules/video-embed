@@ -5,13 +5,25 @@ export const View = (p, children) => {
     }
   }
 
-  if (!p.src && typeof children === 'string') {
-    p.src = children
+  if (!p.src) {
+    if (typeof children === 'string') {
+      p.src = children
+    }
+  }
+
+  if (p.src) {
+    if (parseInt(p.src) === parseInt(p.src)) {
+      // src is numeric, assume vimeo. might clash with youtube at one point.
+      p.src = `https://player.vimeo.com/video/${p.src}`
+    } else if (!p.src.startsWith('http')) {
+      p.src = `https://www.youtube-nocookie.com/embed/${p.src}`
+    }
   }
 
   CHECK_PROPS(p, propTypes, 'VideoEmbed')
 
   let { src, width, height, class: cl = 'VideoEmbed', style, host, ...props } = p
+
   // if there is no video url, why would we render?
   if (!src) {
     return
@@ -19,13 +31,6 @@ export const View = (p, children) => {
 
   if (!cl.includes('VideoEmbed')) {
     cl = `VideoEmbed ${cl}`
-  }
-
-  // // src is numeric, assume vimeo. might clash with youtube at one point.
-  if (parseInt(src) === parseInt(src)) {
-    src = `https://player.vimeo.com/video/${src}`
-  } else if (!src.startsWith('http')) {
-    src = `https://www.youtube-nocookie.com/embed/${src}`
   }
 
   if (height) {
