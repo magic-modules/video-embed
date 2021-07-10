@@ -9,9 +9,9 @@ export const state = {
       to: '/#usage',
       text: 'usage',
       items: [
-        { to: '/#usage-youtube', text: 'youtube' },
-        { to: '/#usage-vimeo', text: 'vimeo' },
-        { to: '/#usage-others', text: 'other hosts' },
+        { to: '-youtube', text: 'youtube' },
+        { to: '-vimeo', text: 'vimeo' },
+        { to: '-others', text: 'other hosts' },
       ],
     },
     { to: '/#props', text: 'props' },
