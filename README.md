@@ -1,6 +1,6 @@
 ## @magic-modules/video-embed
 
-this is the [@magic-modules(https://github.com/magic-modules) VideoEmbed component.
+this is the [@magic-modules](https://github.com/magic-modules) VideoEmbed component.
 it renders videos from any http url that allows iframe embedding.
 
 [html docs and demo](https://magic-modules.github.io/video-embed)
@@ -79,7 +79,7 @@ update docs
 ##### 0.0.4
 bump required node version to 14.2.0
 
-##### 0.0.5 
+##### 0.0.5
 bump required node version to 14.15.4
 
 ##### 0.0.6 - unreleased
