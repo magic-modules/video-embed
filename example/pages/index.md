@@ -20,11 +20,11 @@ in a page/component, just pass a video id to the VideoEmbed module.
 `VideoEmbed('ecIWPzGEbFc')`
 
 #### markdown
-`<VideoEmbed src="ecIWPzGEbFc"></VideoEmbed>`
+`<VideoEmbed id="ecIWPzGEbFc"></VideoEmbed>`
 
 renders
 
-<VideoEmbed src="ecIWPzGEbFc"></VideoEmbed>
+<VideoEmbed id="ecIWPzGEbFc"></VideoEmbed>
 
 ### #usage- vimeo
 
@@ -38,7 +38,7 @@ if the video id is a number, the video is assumed to be hosted on vimeo
 
 renders
 
-<VideoEmbed src="116582567"></VideoEmbed>
+<VideoEmbed id="116582567"></VideoEmbed>
 
 #### #usage-others other video hosts
 
@@ -49,39 +49,39 @@ videos from arbitrary hosts can be included as well, as long as those hosts allo
 `VideoEmbed('https://videopress.com/embed/kUJmAcSf')`
 
 #### markdown
-`<VideoEmbed src="https://videopress.com/embed/kUJmAcSf"></VideoEmbed>`
+`<VideoEmbed id="https://videopress.com/embed/kUJmAcSf"></VideoEmbed>`
 
 renders
 
-<VideoEmbed src="https://videopress.com/embed/kUJmAcSf"></VideoEmbed>
+<VideoEmbed id="https://videopress.com/embed/kUJmAcSf"></VideoEmbed>
 
 ## props
 
 you can pass a width and height, and any other props to the video.
 
 #### javascript
-`VideoEmbed({ src: 'tIxHmsWCd7g', width: "50%", height: 200 })`
+`VideoEmbed({ id: 'tIxHmsWCd7g', width: "50%", height: 200 })`
 
 #### markdown
-`<VideoEmbed src="tIxHmsWCd7g" width="50%" height="200"></VideoEmbed>`
+`<VideoEmbed id="tIxHmsWCd7g" width="50%" height="200"></VideoEmbed>`
 
 renders
 
-<VideoEmbed src="tIxHmsWCd7g" width="50%" height="200px"></VideoEmbed>
+<VideoEmbed id="tIxHmsWCd7g" width="50%" height="200px"></VideoEmbed>
 
 ### fixed-dimensions
 
 to set a fixed video size, simply add both a height and a width value (px, em, rem, vh, pt).
 
 #### javascript
-`VideoEmbed({ src: 'E-dUveGINTg', width: "300px", height: "900px" })`
+`VideoEmbed({ id: 'E-dUveGINTg', width: "300px", height: "900px" })`
 
 #### markdown
-`<VideoEmbed src="E-dUveGINTg" width="300px" height="900px"></VideoEmbed>`
+`<VideoEmbed id="E-dUveGINTg" width="300px" height="900px"></VideoEmbed>`
 
 renders
 
-<VideoEmbed src="E-dUveGINTg" width="300px" height="900px"></VideoEmbed>
+<VideoEmbed id="E-dUveGINTg" width="300px" height="900px"></VideoEmbed>
 
 ## source
 
