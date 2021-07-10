@@ -1,6 +1,6 @@
 {
   "name": "@magic-modules/video-embed",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "Wizards & Witches",
   "homepage": "https://magic-modules.github.com/video-embed",
   "description": "@magic VideoEmbed module. Embed youtube, vimeo or abitrary videos via iframe.",
