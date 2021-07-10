@@ -82,5 +82,8 @@ bump required node version to 14.2.0
 ##### 0.0.5
 bump required node version to 14.15.4
 
-##### 0.0.6 - unreleased
+##### 0.0.6
+BREAKING: rename props.src to props.id
+
+##### 0.0.7 - unreleased
 ...
